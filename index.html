@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Som de Afeto - Músicas Personalizadas para Momentos Especiais</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Updated Font Awesome link for better compatibility -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Som de Afeto</h1>
+                <p>Músicas que tocam o coração</p>
+            </div>
+            <!-- Added hamburger menu button for mobile -->
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#como-funciona">Como Funciona</a></li>
+                    <li><a href="#preco">Preço</a></li>
+                    <li><a href="#contato" class="btn-destaque">Encomendar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Added mobile sidemenu -->
+    <div class="sidemenu">
+        <div class="sidemenu-close">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="sidemenu-content">
+            <div class="sidemenu-logo">
+                <h3>Som de Afeto</h3>
+                <p>Músicas que tocam o coração</p>
+            </div>
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#como-funciona">Como Funciona</a></li>
+                    <li><a href="#preco">Preço</a></li>
+                    <li><a href="#contato" class="btn-destaque">Encomendar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- Added overlay for sidemenu -->
+    <div class="overlay"></div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Transforme seus sentimentos em música</h2>
+                <p>Criamos músicas personalizadas para casamentos, chás de revelação, aniversários e surpresas para pessoas especiais.</p>
+                <a href="#contato" class="btn-principal">Quero uma música única</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>Sobre o Som de Afeto</h2>
+            <div class="sobre-content">
+                <div class="sobre-texto">
+                    <p>O Som de Afeto nasceu da paixão por transformar histórias de amor e momentos especiais em canções únicas e emocionantes.</p>
+                    <p>Cada música é cuidadosamente composta para capturar a essência dos seus sentimentos e criar memórias que durarão para sempre.</p>
+                    <p>Nosso time de compositores e músicos profissionais trabalha com dedicação para criar a trilha sonora perfeita para os momentos mais importantes da sua vida.</p>
+                </div>
+                <div class="sobre-imagem">
+                    <img src="images/casal-feliz.jpg" alt="Casal emocionado ouvindo música">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="como-funciona" class="como-funciona">
+        <div class="container">
+            <h2>Como Funciona</h2>
+            <div class="passos">
+                <div class="passo">
+                    <div class="passo-numero">1</div>
+                    <h3>Conte sua história</h3>
+                    <p>Preencha nosso formulário com detalhes sobre a história que deseja transformar em música e envie uma referência musical.</p>
+                </div>
+                <div class="passo">
+                    <div class="passo-numero">2</div>
+                    <h3>Criação personalizada</h3>
+                    <p>Nossa equipe compõe uma música única baseada na sua história e referências musicais.</p>
+                </div>
+                <div class="passo">
+                    <div class="passo-numero">3</div>
+                    <h3>Aprovação</h3>
+                    <p>Você recebe a música para aprovação. Só paga se gostar do resultado!</p>
+                </div>
+                <div class="passo">
+                    <div class="passo-numero">4</div>
+                    <h3>Entrega final</h3>
+                    <p>Após aprovação, você recebe a versão final da sua música personalizada para eternizar seu momento especial.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="galeria">
+        <div class="container">
+            <h2>Momentos Emocionantes</h2>
+            <div class="imagens">
+                <div class="imagem">
+                    <img src="images/casamento.jpg" alt="Casal em casamento">
+                </div>
+                <div class="imagem">
+                    <img src="images/cha-revelacao.jpg" alt="Família em chá de revelação">
+                </div>
+                <div class="imagem">
+                    <img src="images/aniversario.jpg" alt="Celebração de aniversário">
+                </div>
+                <div class="imagem">
+                    <img src="images/surpresa.jpg" alt="Momento de surpresa">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="preco" class="preco">
+        <div class="container">
+            <h2>Investimento</h2>
+            <div class="preco-card">
+                <div class="preco-original">
+                    <span class="riscado">R$ 399</span>
+                </div>
+                <div class="preco-promocional">
+                    <span class="valor">R$ 199</span>
+                    <span class="destaque">Oferta por tempo limitado!</span>
+                </div>
+                <div class="garantia">
+                    <p><strong>Garantia de satisfação:</strong> Você só paga se gostar do resultado!</p>
+                </div>
+                <a href="#contato" class="btn-principal">Quero minha música personalizada</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="contato">
+        <div class="container">
+            <h2>Encomende Sua Música</h2>
+            <form id="formulario-musica">
+                <div class="form-grupo">
+                    <label for="nome">Seu Nome</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-grupo">
+                    <label for="email">Seu E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-grupo">
+                    <label for="ocasiao">Ocasião</label>
+                    <select id="ocasiao" name="ocasiao" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="Casamento">Casamento</option>
+                        <option value="Chá de Revelação">Chá de Revelação</option>
+                        <option value="Aniversário">Aniversário</option>
+                        <option value="Surpresa">Surpresa para alguém especial</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                </div>
+                <div class="form-grupo">
+                    <label for="historia">Conte a história que deseja transformar em música</label>
+                    <textarea id="historia" name="historia" rows="6" required></textarea>
+                </div>
+                <div class="form-grupo">
+                    <label for="referencia">Link do YouTube com uma música de referência</label>
+                    <input type="url" id="referencia" name="referencia" placeholder="https://www.youtube.com/watch?v=..." required>
+                </div>
+                <button type="submit" class="btn-principal">Enviar para o WhatsApp</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="depoimentos">
+        <div class="container">
+            <h2>O Que Nossos Clientes Dizem</h2>
+            <div class="depoimentos-lista">
+                <div class="depoimento">
+                    <div class="estrelas">★★★★★</div>
+                    <p>"A música que criaram para nosso casamento foi simplesmente perfeita! Todos os convidados se emocionaram. Valeu cada centavo!"</p>
+                    <div class="cliente">
+                        <img src="images/cliente1.jpg" alt="Cliente">
+                        <span>Maria e João</span>
+                    </div>
+                </div>
+                <div class="depoimento">
+                    <div class="estrelas">★★★★★</div>
+                    <p>"Encomendei uma música para o aniversário da minha mãe e ela chorou de emoção. Uma lembrança que ficará para sempre em nossos corações."</p>
+                    <div class="cliente">
+                        <img src="images/cliente2.jpg" alt="Cliente">
+                        <span>Carlos Silva</span>
+                    </div>
+                </div>
+                <div class="depoimento">
+                    <div class="estrelas">★★★★★</div>
+                    <p>"O chá de revelação ficou ainda mais especial com a música personalizada. Todos perguntaram como conseguimos algo tão único!"</p>
+                    <div class="cliente">
+                        <img src="images/cliente3.jpg" alt="Cliente">
+                        <span>Ana e Pedro</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo-footer">
+                    <h3>Som de Afeto</h3>
+                    <p>Músicas que tocam o coração</p>
+                </div>
+                <div class="contato-footer">
+                    <h4>Entre em contato</h4>
+                    <p><a href="https://wa.me/5521984623153" target="_blank">WhatsApp: (21) 98462-3153</a></p>
+                    <p>contato@somdeafeto.com.br</p>
+                </div>
+                <div class="redes-sociais">
+                    <h4>Siga-nos</h4>
+                    <div class="icones">
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Som de Afeto. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
