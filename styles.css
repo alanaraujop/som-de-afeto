@@ -108,6 +108,8 @@ nav ul {
 }
 
 nav ul li {
+    display: flex;
+    align-items: center;
     margin-left: 30px;
 }
 
