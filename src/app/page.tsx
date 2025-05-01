@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import ExternalLink from '@/components/ExternalLink';
 
 export default function Home() {
   return (
@@ -15,10 +16,10 @@ export default function Home() {
             </div>
             <nav className="desktop-nav">
                 <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#como-funciona">Como Funciona</a></li>
-                    <li><a href="#preco">Preço</a></li>
-                    <li><a href="#contato" className="btn-destaque">Encomendar</a></li>
+                    <li><Link href="#sobre">Sobre</Link></li>
+                    <li><Link href="#como-funciona">Como Funciona</Link></li>
+                    <li><Link href="#preco">Preço</Link></li>
+                    <li><Link href="#contato" className="btn-destaque">Encomendar</Link></li>
                 </ul>
             </nav>
         </div>
@@ -35,10 +36,10 @@ export default function Home() {
             </div>
             <nav className="mobile-nav">
                 <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#como-funciona">Como Funciona</a></li>
-                    <li><a href="#preco">Preço</a></li>
-                    <li><a href="#contato" className="btn-destaque">Encomendar</a></li>
+                    <li><Link href="#sobre">Sobre</Link></li>
+                    <li><Link href="#como-funciona">Como Funciona</Link></li>
+                    <li><Link href="#preco">Preço</Link></li>
+                    <li><Link href="#contato" className="btn-destaque">Encomendar</Link></li>
                 </ul>
             </nav>
         </div>
@@ -50,7 +51,7 @@ export default function Home() {
             <div className="hero-content">
                 <h2>Transforme seus sentimentos em música</h2>
                 <p>Criamos músicas personalizadas para casamentos, chás de revelação, aniversários e surpresas para pessoas especiais.</p>
-                <a href="#contato" className="btn-principal">Quero uma música única</a>
+                <Link href="#contato" className="btn-principal">Quero uma música única</Link>
             </div>
         </div>
     </section>
@@ -65,7 +66,14 @@ export default function Home() {
                     <p>Nosso time de compositores e músicos profissionais trabalha com dedicação para criar a trilha sonora perfeita para os momentos mais importantes da sua vida.</p>
                 </div>
                 <div className="sobre-imagem">
-                    <img src="images/casal-feliz.jpg" alt="Casal emocionado ouvindo música" />
+                    <Image 
+                      src="/images/casal-feliz.jpg" 
+                      alt="Casal emocionado ouvindo música"
+                      width={500}
+                      height={350}
+                      style={{ maxWidth: '100%', height: 'auto' }}
+                      className="rounded-lg"
+                    />
                 </div>
             </div>
         </div>
@@ -104,16 +112,44 @@ export default function Home() {
             <h2>Momentos Emocionantes</h2>
             <div className="imagens">
                 <div className="imagem">
-                    <img src="images/casamento.jpg" alt="Casal em casamento"/>
+                    <Image 
+                      src="/images/casamento.jpg" 
+                      alt="Casal em casamento"
+                      width={400}
+                      height={250}
+                      style={{ width: '100%', height: '250px', objectFit: 'cover' }}
+                      className="rounded-none"
+                    />
                 </div>
                 <div className="imagem">
-                    <img src="images/cha-revelacao.jpg" alt="Família em chá de revelação"/>
+                    <Image 
+                      src="/images/cha-revelacao.jpg" 
+                      alt="Família em chá de revelação"
+                      width={400}
+                      height={250}
+                      style={{ width: '100%', height: '250px', objectFit: 'cover' }}
+                      className="rounded-none"
+                    />
                 </div>
                 <div className="imagem">
-                    <img src="images/aniversario.jpg" alt="Celebração de aniversário"/>
+                    <Image 
+                      src="/images/aniversario.jpg" 
+                      alt="Celebração de aniversário"
+                      width={400}
+                      height={250}
+                      style={{ width: '100%', height: '250px', objectFit: 'cover' }}
+                      className="rounded-none"
+                    />
                 </div>
                 <div className="imagem">
-                    <img src="images/surpresa.jpg" alt="Momento de surpresa"/>
+                    <Image 
+                      src="/images/surpresa.jpg" 
+                      alt="Momento de surpresa"
+                      width={400}
+                      height={250}
+                      style={{ width: '100%', height: '250px', objectFit: 'cover' }}
+                      className="rounded-none"
+                    />
                 </div>
             </div>
         </div>
@@ -133,7 +169,7 @@ export default function Home() {
                 <div className="garantia">
                     <p><strong>Garantia de satisfação:</strong> Você só paga se gostar do resultado!</p>
                 </div>
-                <a href="#contato" className="btn-principal">Quero minha música personalizada</a>
+                <Link href="#contato" className="btn-principal">Quero minha música personalizada</Link>
             </div>
         </div>
     </section>
@@ -182,7 +218,14 @@ export default function Home() {
                     <div className="estrelas">★★★★★</div>
                     <p>"A música que criaram para nosso casamento foi simplesmente perfeita! Todos os convidados se emocionaram. Valeu cada centavo!"</p>
                     <div className="cliente">
-                        <img src="images/cliente1.jpg" alt="Cliente"/>
+                        <Image 
+                          src="/images/cliente1.jpg" 
+                          alt="Cliente"
+                          width={50}
+                          height={50}
+                          style={{ objectFit: 'cover' }}
+                          className="rounded-full mr-[15px]"
+                        />
                         <span>Maria e João</span>
                     </div>
                 </div>
@@ -190,7 +233,14 @@ export default function Home() {
                     <div className="estrelas">★★★★★</div>
                     <p>"Encomendei uma música para o aniversário da minha mãe e ela chorou de emoção. Uma lembrança que ficará para sempre em nossos corações."</p>
                     <div className="cliente">
-                        <img src="images/cliente2.jpg" alt="Cliente"/>
+                        <Image 
+                          src="/images/cliente2.jpg" 
+                          alt="Cliente"
+                          width={50}
+                          height={50}
+                          style={{ objectFit: 'cover' }}
+                          className="rounded-full mr-[15px]"
+                        />
                         <span>Carlos Silva</span>
                     </div>
                 </div>
@@ -198,7 +248,14 @@ export default function Home() {
                     <div className="estrelas">★★★★★</div>
                     <p>"O chá de revelação ficou ainda mais especial com a música personalizada. Todos perguntaram como conseguimos algo tão único!"</p>
                     <div className="cliente">
-                        <img src="images/cliente3.jpg" alt="Cliente"/>
+                        <Image 
+                          src="/images/cliente3.jpg" 
+                          alt="Cliente"
+                          width={50}
+                          height={50}
+                          style={{ objectFit: 'cover' }}
+                          className="rounded-full mr-[15px]"
+                        />
                         <span>Ana e Pedro</span>
                     </div>
                 </div>
@@ -213,22 +270,23 @@ export default function Home() {
                     <h3>Som de Afeto</h3>
                     <p>Músicas que tocam o coração</p>
                 </div>
+                // In the footer section:
                 <div className="contato-footer">
-                    <h4>Entre em contato</h4>
-                    <p><a href="https://wa.me/5521984623153" target="_blank">WhatsApp: (21) 98462-3153</a></p>
-                    <p>contato@somdeafeto.com.br</p>
+                  <h4>Entre em contato</h4>
+                  <p><ExternalLink href="https://wa.me/5521984623153">WhatsApp: (21) 98462-3153</ExternalLink></p>
+                  <p>contato@somdeafeto.com.br</p>
                 </div>
                 <div className="redes-sociais">
-                    <h4>Siga-nos</h4>
-                    <div className="icones">
-                        <a href="#" target="_blank"><i className="fab fa-instagram"></i></a>
-                        <a href="#" target="_blank"><i className="fab fa-facebook"></i></a>
-                        <a href="#" target="_blank"><i className="fab fa-youtube"></i></a>
-                    </div>
+                  <h4>Siga-nos</h4>
+                  <div className="icones">
+                    <ExternalLink href="#" className="social-icon"><i className="fab fa-instagram"></i></ExternalLink>
+                    <ExternalLink href="#" className="social-icon"><i className="fab fa-facebook"></i></ExternalLink>
+                    <ExternalLink href="#" className="social-icon"><i className="fab fa-youtube"></i></ExternalLink>
+                  </div>
                 </div>
-            </div>
-            <div className="copyright">
-                <p>&copy; 2023 Som de Afeto. Todos os direitos reservados.</p>
+                <div className="copyright">
+                    <p>&copy; 2023 Som de Afeto. Todos os direitos reservados.</p>
+                </div>
             </div>
         </div>
     </footer>
