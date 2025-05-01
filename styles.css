@@ -129,12 +129,17 @@ nav ul li a:hover {
     background-position: center;
     color: white;
     text-align: center;
-    padding: 180px 0 100px;
+    padding: 0; /* Removed padding */
+    height: 100vh; /* Set height to 100% of viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-content {
     max-width: 800px;
     margin: 0 auto;
+    padding: 20px; /* Added padding to the content instead */
 }
 
 .hero h2 {
